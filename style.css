@@ -99,10 +99,11 @@ article img {
 }
 article p, article ul {
     font-size: 90%;
+    padding:1em;
 }
 article ul {
     margin: 0.5em 0;
-    padding-left: 1.4em;
+    padding-left: 2em;
 }
 article ul li {
     margin: 0.5em 0;
