@@ -8,7 +8,7 @@ body {
 
 h1 {
     text-align: center;
-    margin: 1em 0;
+    margin: 1em 0 0;
     font-size: 600%;
     font-family: serif;
     font-weight: 500;
@@ -61,6 +61,9 @@ h1 .d {
 #main {
     text-align: center;
     margin: 0 auto;
+}
+#tagline {
+    margin: 0 0 4em;
 }
 article {
     vertical-align: top;
