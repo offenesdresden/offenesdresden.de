@@ -136,3 +136,15 @@ footer:hover a {
     transition-property: color;
     transition-duration: 1s;
 }
+
+.events p {
+    margin: 0;
+    padding: 0;
+}
+.events title {
+    font-weight: bold;
+    color: #333;
+}
+.events .date {
+    color: #666;
+}
