@@ -85,6 +85,10 @@ article:hover {
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
+article iframe {
+    /* Twitter */
+    max-height: 30em;
+}
 article h2 {
     text-align: center;
     font-weight: bold;
