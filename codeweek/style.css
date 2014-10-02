@@ -63,22 +63,6 @@ margin: 0 auto;
 #tagline {
 margin: 0 0 4em;
 }
-
-articleSpan {
-vertical-align: top;
-text-align: center;
-width: 600px;
-min-height: 300px;
-display: inline-block;
-margin: 1em 2em;
-padding: 0.5em 0;
-box-shadow: none;
-transition-property: box-shadow;
-transition-duration: 1s;
-transition-timing-function: ease;
-}
-
-
 article {
 vertical-align: top;
 text-align: left;
