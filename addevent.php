@@ -39,8 +39,16 @@ function dateArray($date, $time){
 
 function dateString($date){
 	$datestr = $date["year"]."-".$date["month"]."-".$date["day"]."T".$date["hour"].":".$date["minute"].":00";
-	echo $datestr;
 	return $datestr;
+}
+
+function sendMail($subject, $body){
+	$to = "user@localhost";
+	if(mail($to, $subject, $body)){
+		echo "Ihr Termin wurde versandt.\n";
+	}else{
+		echo "Es ist ein Fehler aufgetreten.\n";
+	}
 }
 
 $title = sanitize($_POST["title"]);
@@ -58,18 +66,15 @@ if(!$start or !$end){
 	$startstring = dateString($start);
 	$endstring = dateString($end);
 	$varxml = "<event title=\"".$title."\">\n<start>".$startstring."</start>\n<end>".$endstring."</end>\n<location>".$location."</location>\n<link>".$link."</link>\n</event>\n";
-	$filexml = fopen("event.xml", "w");
+	/*$filexml = fopen("event.xml", "w");
 	fwrite($filexml, $varxml);
-	fclose($filexml);
+	fclose($filexml);*/
+	sendMail($title, $varxml);
 }
 ?>
 <HTml>
 <head>
-<title>test</title>
+<title>Termin einreichen</title>
 <body>
-<?php
-//echo "&lt;event title=\"".$title."\"&gt;\n&lt;start&gt;".$startstring."&lt;/start&gt;\n&lt;end&gt;".$endstring."&lt;/end&gt;\n&lt;location&gt;".$location."&lt;/location&gt;\n&lt;link&gt;".$link."&lt;/link&gt;\n&lt;/event&gt;\n";
-echo "<a href='event.xml'>View event.xml</a>";
-?>
 </body>
 </html>

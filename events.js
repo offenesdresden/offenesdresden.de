@@ -14,6 +14,24 @@ function checkDate(){
 	var enddate = document.getElementById("enddate").value.split(".");
 	var starttime = document.getElementById("starttime").value.split(":");
 	var endtime = document.getElementById("endtime").value.split(":");
+	var current = new Date();
+	var currentdate = [];
+	var currenttime = [];
+	currentdate[0] = current.getDate();
+	currentdate[1] = current.getMonth();
+	currentdate[2] = current.getFullYear();
+	currenttime[0] = current.getHours();
+	currenttime[1] = current.getMinutes();
+	for(var i = 0; i < 3; i++){
+		if(isNaN(startdate[i]) || isNaN(enddate[i]) || enddate[i] < currentdate[i] || startdate[i] < currentdate[i]){
+			return false;
+		}
+	}
+	for(var i = 0; i < 2; i++){
+		if(isNaN(starttime[i]) || isNaN(endtime[i]) || starttime[i] < currenttime[i] || endtime[i] < currenttime[i]){
+			return false;
+		}
+	}
 	if(startdate[0] > 31 || enddate[0] > 31 || startdate[1] > 12 || enddate[1] > 12 || starttime[0] > 24 || endtime[0] > 24 || starttime[1] > 60 || endtime[1] > 60){
 		return false;
 	}else{
@@ -31,15 +49,22 @@ function validate(){
 	}
 }
 
+function leadingZero(date){
+	if(date < 10){
+		return "0" + date;
+	}else{
+		return date;
+	}
+}
 
 function setDate(){
 	var date = new Date();
-	var day = date.getDate();
-	var month = date.getMonth() + 1;
+	var day = leadingZero(date.getDate());
+	var month = leadingZero(date.getMonth() + 1);
 	var year = date.getFullYear();
-	var hour = date.getHours();
-	var endhour = date.getHours() + 1;
-	var minute = date.getMinutes();
+	var hour = leadingZero(date.getHours());
+	var endhour = leadingZero(date.getHours() + 1);
+	var minute = leadingZero(date.getMinutes());
 	document.getElementById("startdate").value=day+"."+month+"."+year;
 	document.getElementById("starttime").value=hour+":"+minute;
 	document.getElementById("enddate").value=day+"."+month+"."+year;
@@ -72,9 +97,9 @@ $.ajax({ url: "events.json" }).done(function(events) {
         li.find('a').attr('href', event.location);
         ul.append(li);
     });
+    ul.append($('<li><a href onClick="addevent()">Termin einreichen</a>.</li>'));
     article.append(ul);
     article.append($("<p>Die Termine sind auch <a href='events.json'>maschinenlesbar erhältlich</a>.</p>"));
-    article.append($('<a href onClick="addevent()">Termin einreichen</a>.'));
     $('#main').prepend(article);
 }).fail(function() {
     console.error("ajax", arguments);
