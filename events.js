@@ -6,8 +6,31 @@ function pad(s, l, p) {
 }
 
 function addevent(){
-	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=360");
+	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=420");
 }
+
+function checkDate(){
+	var startdate = document.getElementById("startdate").value.split(".");
+	var enddate = document.getElementById("enddate").value.split(".");
+	var starttime = document.getElementById("starttime").value.split(":");
+	var endtime = document.getElementById("endtime").value.split(":");
+	if(startdate[0] > 31 || enddate[0] > 31 || startdate[1] > 12 || enddate[1] > 12 || starttime[0] > 24 || endtime[0] > 24 || starttime[1] > 60 || endtime[1] > 60){
+		return false;
+	}else{
+		return true;
+	}
+}
+
+function validate(){
+	var form = document.getElementById("eventform");
+	if(checkDate()){
+		form.removeAttribute("onSubmit");
+		form.setAttribute("action", "addevent.php");
+	}else{
+		//alert("Falsche Eingabe!");
+	}
+}
+
 
 function setDate(){
 	var date = new Date();
@@ -15,9 +38,12 @@ function setDate(){
 	var month = date.getMonth() + 1;
 	var year = date.getFullYear();
 	var hour = date.getHours();
+	var endhour = date.getHours() + 1;
 	var minute = date.getMinutes();
-	document.getElementById("date").value=day+"."+month+"."+year;
-	document.getElementById("time").value=hour+":"+minute;
+	document.getElementById("startdate").value=day+"."+month+"."+year;
+	document.getElementById("starttime").value=hour+":"+minute;
+	document.getElementById("enddate").value=day+"."+month+"."+year;
+	document.getElementById("endtime").value=endhour+":"+minute;
 }
 
 $.ajax({ url: "events.json" }).done(function(events) {
