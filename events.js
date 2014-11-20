@@ -5,6 +5,21 @@ function pad(s, l, p) {
     return s;
 }
 
+function addevent(){
+	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=360");
+}
+
+function setDate(){
+	var date = new Date();
+	var day = date.getDate();
+	var month = date.getMonth() + 1;
+	var year = date.getFullYear();
+	var hour = date.getHours();
+	var minute = date.getMinutes();
+	document.getElementById("date").value=day+"."+month+"."+year;
+	document.getElementById("time").value=hour+":"+minute;
+}
+
 $.ajax({ url: "events.json" }).done(function(events) {
     var now = Date.now();
     var article = $("<article class='events'><h2>Nächste Treffen</h2></article>");
@@ -33,6 +48,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
     });
     article.append(ul);
     article.append($("<p>Die Termine sind auch <a href='events.json'>maschinenlesbar erhältlich</a>.</p>"));
+    article.append($('<a href onClick="addevent()">Termin einreichen</a>.'));
     $('#main').prepend(article);
 }).fail(function() {
     console.error("ajax", arguments);

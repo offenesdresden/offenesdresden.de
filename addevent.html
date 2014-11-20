@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload="setDate()">
+	<form action="addevent.php" method="post">
+		<fieldset>
+			<legend>Event einreichen</legend>
+			<p><label>Titel:<br/> <input type="text" width="250" name="title"/></label></p>
+			<p><label>Start:<br/> <input id="date" type="text" placeholder="1.1.2000" name="date"/><input id="time" type="text" placeholder="10:00" name="time"/></label></p>
+			<p><label>Ort:<br/> <input type="text" name="location"/></label></p>
+			<p><label>Link:<br/> <input type="text" name="link"/></label></p>
+			<P><label><input type="submit" Value="Absenden"></label></p>
+		</fieldset>
+	</form>
+	<script type="text/javascript" src="events.js"></script>
+</body>
+</html>
