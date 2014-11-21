@@ -1,4 +1,5 @@
 <?php
+session_start();
 function sanitize($string){
 	$string = strip_tags($string);
 	$string = str_replace("&", "&amp;", $string);
@@ -42,10 +43,20 @@ function dateString($date){
 	return $datestr;
 }
 
-function sendMail($subject, $body){
-	$to = "user@localhost";
-	if(mail($to, $subject, $body)){
-		echo "Ihr Termin wurde versandt.\n";
+function challengeString(){
+	$chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	$chstr = "";
+	for($i = 0; $i < 8; $i++){
+		$chstr .= $chars[rand(0, strlen($chars) - 1)];
+	}
+	return $chstr;
+}
+
+function sendChallenge($address, $subject){
+	$subject .= " - Verifizierung";
+	$body = challengeString();
+	if(mail($address, $subject, $body)){
+		return $body;
 	}else{
 		echo "Es ist ein Fehler aufgetreten.\n";
 	}
@@ -58,23 +69,41 @@ $enddate = sanitize($_POST["enddate"]);
 $endtime = sanitize($_POST["endtime"]);
 $location = sanitize($_POST["location"]);
 $link = sanitize($_POST["link"]);
+$mail = sanitize($_POST["mail"]);
 $start = dateArray($startdate, $starttime);
 $end = dateArray($enddate, $endtime);
 if(!$start or !$end){
-	echo "<p>Falsche Eingabe</p><a href='addevent.html'>Zurück</a>";
+	echo "<p>Es ist ein Eingabefehler aufgetreten.</p><a href='addevent.html'>Zurück</a>";
 }else{
 	$startstring = dateString($start);
 	$endstring = dateString($end);
-	$varxml = "<event title=\"".$title."\">\n<start>".$startstring."</start>\n<end>".$endstring."</end>\n<location>".$location."</location>\n<link>".$link."</link>\n</event>\n";
-	/*$filexml = fopen("event.xml", "w");
-	fwrite($filexml, $varxml);
-	fclose($filexml);*/
-	sendMail($title, $varxml);
+	$varxml = "<event title=\"".$title."\">\n<start>".$startstring."</start>\n<end>".$endstring."</end>\n<location>".$location."</location>\n<link>".$link."</link>\n</event>\n<mail>".$mail."</mail>\n";
+	$challenge = sendChallenge($mail, $title);
+	$_SESSION["challenge"] = $challenge;
+	$_SESSION["title"] = $title;
+	$_SESSION["xml"] = $varxml;
 }
 ?>
-<HTml>
+<!DOCTYPE html>
+<html>
 <head>
-<title>Termin einreichen</title>
+<title>Event einreichen</title>
 <body>
+	<fieldset>
+		<legend>Eventdaten</legend>
+		<?php
+		echo "<p><label>Titel:<br/>".$title."</label></p>";
+		echo "<p><label>Start:<br/>".$startdate." ".$starttime."</label></p>";
+		echo "<p><label>Ende: <br/>".$enddate." ".$endtime."</label></p>";
+		echo "<p><label>Ort:<br/>".$location."</label></p>";
+		echo "<p><label>Link:<br/>".$link."</label></p>";
+		echo "<p><label>E-Mail:<br/>".$mail."</label></p>";
+		?>
+		<form action="challenge.php" method="post">
+		<?php echo "<input type='hidden' name='sid' value='".session_id()."'/>";?>
+		<p><label>Code:<br/><input type="text" name="challenge"/></label></p>
+		<p><label><input type="submit" Value="Absenden"></label></p>
+		</form>
+	</fieldset>
 </body>
 </html>
