@@ -6,7 +6,7 @@ function pad(s, l, p) {
 }
 
 function addevent(){
-	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=420");
+	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=480");
 }
 
 function checkDate(){
@@ -39,9 +39,24 @@ function checkDate(){
 	}
 }
 
+function checkFilled(){
+	var userinput = [];
+	userinput[0] = document.getElementById("title").value;
+	userinput[1] = document.getElementById("location").value;
+	userinput[2] = document.getElementById("link").value;
+	userinput[3] = document.getElementById("mail").value;
+	for(var i = 0; i < 4; i++){
+		if(userinput[i].length == 0){
+			return false;
+		}
+	}
+	return true;
+}
+
 function validate(){
 	var form = document.getElementById("eventform");
-	if(checkDate()){
+	var check = checkFilled();
+	if(checkDate() && checkFilled()){
 		form.removeAttribute("onSubmit");
 		form.setAttribute("action", "addevent.php");
 	}else{
