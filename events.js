@@ -9,30 +9,33 @@ function addevent(){
 	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=480");
 }
 
+function isoDate(day, month, year, hour, minute){
+	if(day > 31 || month > 12 || hour > 23 || minute > 59){
+		return false;
+	}
+	var iso = year+"-"+month+"-"+day+"T"+hour+":"+minute+":00";
+	return iso;
+}
+
 function checkDate(){
 	var startdate = document.getElementById("startdate").value.split(".");
 	var enddate = document.getElementById("enddate").value.split(".");
 	var starttime = document.getElementById("starttime").value.split(":");
 	var endtime = document.getElementById("endtime").value.split(":");
 	var current = new Date();
-	var currentdate = [];
-	var currenttime = [];
-	currentdate[0] = current.getDate();
-	currentdate[1] = current.getMonth();
-	currentdate[2] = current.getFullYear();
-	currenttime[0] = current.getHours();
-	currenttime[1] = current.getMinutes();
-	for(var i = 0; i < 3; i++){
-		if(isNaN(startdate[i]) || isNaN(enddate[i]) || enddate[i] < currentdate[i] || startdate[i] < currentdate[i]){
+/*	for(var i = 0; i < 3; i++){
+		if(isNaN(startdate[i]) || isNaN(enddate[i])){
 			return false;
 		}
 	}
 	for(var i = 0; i < 2; i++){
-		if(isNaN(starttime[i]) || isNaN(endtime[i]) || starttime[i] < currenttime[i] || endtime[i] < currenttime[i]){
+		if(isNaN(starttime[i]) || isNaN(endtime[i])){
 			return false;
 		}
-	}
-	if(startdate[0] > 31 || enddate[0] > 31 || startdate[1] > 12 || enddate[1] > 12 || starttime[0] > 24 || endtime[0] > 24 || starttime[1] > 60 || endtime[1] > 60){
+	}*/
+	start = Date.parse(isoDate(startdate[0], startdate[1], startdate[2], starttime[0], starttime[1]));
+	end = Date.parse(isoDate(enddate[0], enddate[1], enddate[2], endtime[0], endtime[1]));
+	if(start < current || end < start || isNaN(start) || isNaN(end)){
 		return false;
 	}else{
 		return true;
@@ -77,9 +80,9 @@ function setDate(){
 	var day = leadingZero(date.getDate());
 	var month = leadingZero(date.getMonth() + 1);
 	var year = date.getFullYear();
-	var hour = leadingZero(date.getHours());
-	var endhour = leadingZero(date.getHours() + 1);
-	var minute = leadingZero(date.getMinutes());
+	var hour = leadingZero(date.getHours() + 1);
+	var endhour = leadingZero(date.getHours() + 2);
+	var minute = "00"
 	document.getElementById("startdate").value=day+"."+month+"."+year;
 	document.getElementById("starttime").value=hour+":"+minute;
 	document.getElementById("enddate").value=day+"."+month+"."+year;
