@@ -6,7 +6,7 @@ function pad(s, l, p) {
 }
 
 function addevent(){
-	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=480");
+	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=530");
 }
 
 function isoDate(day, month, year, hour, minute){
@@ -80,8 +80,8 @@ function setDate(){
 	var day = leadingZero(date.getDate());
 	var month = leadingZero(date.getMonth() + 1);
 	var year = date.getFullYear();
-	var hour = leadingZero(date.getHours() + 1);
-	var endhour = leadingZero(date.getHours() + 2);
+	var hour = leadingZero((date.getHours() + 1));
+	var endhour = leadingZero((date.getHours() + 2));
 	var minute = "00"
 	document.getElementById("startdate").value=day+"."+month+"."+year;
 	document.getElementById("starttime").value=hour+":"+minute;

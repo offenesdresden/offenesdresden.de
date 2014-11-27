@@ -55,7 +55,8 @@ function challengeString(){
 function sendChallenge($address, $subject){
 	$subject .= " - Verifizierung";
 	$body = challengeString();
-	if(mail($address, $subject, $body)){
+	$header = "From: no-reply@offenesdresden.de\r\nX-Mailer: PHP/".phpversion();
+	if(mail($address, $subject, $body, $header)){
 		return $body;
 	}else{
 		echo "Es ist ein Fehler aufgetreten.\n";
@@ -68,6 +69,7 @@ $starttime = sanitize($_POST["starttime"]);
 $enddate = sanitize($_POST["enddate"]);
 $endtime = sanitize($_POST["endtime"]);
 $location = sanitize($_POST["location"]);
+$type = $_POST["type"];
 $link = sanitize($_POST["link"]);
 $mail = sanitize($_POST["mail"]);
 $start = dateArray($startdate, $starttime);
@@ -77,11 +79,13 @@ if(!$start or !$end){
 }else{
 	$startstring = dateString($start);
 	$endstring = dateString($end);
-	$varxml = "<event title=\"".$title."\">\n<start>".$startstring."</start>\n<end>".$endstring."</end>\n<location>".$location."</location>\n<link>".$link."</link>\n</event>\n<mail>".$mail."</mail>\n";
+	$varxml = "<event title=\"".$title."\">\n<start>".$startstring."</start>\n<end>".$endstring."</end>\n<location>".$location."</location>\n<link>".$link."</link>\n<mail>".$mail."</mail>\n</event>\n";
 	$challenge = sendChallenge($mail, $title);
 	$_SESSION["challenge"] = $challenge;
 	$_SESSION["title"] = $title;
 	$_SESSION["xml"] = $varxml;
+	$_SESSION["type"] = $type;
+	$_SESSION["mail"] = $mail;
 }
 ?>
 <!DOCTYPE html>
@@ -97,6 +101,7 @@ if(!$start or !$end){
 		echo "<p><label>Ende: <br/>".$enddate." ".$endtime."</label></p>";
 		echo "<p><label>Ort:<br/>".$location."</label></p>";
 		echo "<p><label>Link:<br/>".$link."</label></p>";
+		echo "<p><label>Kategorie: <br/>".$type."</label></p>";
 		echo "<p><label>E-Mail:<br/>".$mail."</label></p>";
 		?>
 		<form action="challenge.php" method="post">
