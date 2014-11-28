@@ -76,17 +76,55 @@ function leadingZero(date){
 }
 
 function setDate(){
+	var day = [];
+	var month = [];
+	var year = [];
+	var hour = [];
 	var date = new Date();
-	var day = leadingZero(date.getDate());
-	var month = leadingZero(date.getMonth() + 1);
-	var year = date.getFullYear();
-	var hour = leadingZero((date.getHours() + 1));
-	var endhour = leadingZero((date.getHours() + 2));
-	var minute = "00"
-	document.getElementById("startdate").value=day+"."+month+"."+year;
-	document.getElementById("starttime").value=hour+":"+minute;
-	document.getElementById("enddate").value=day+"."+month+"."+year;
-	document.getElementById("endtime").value=endhour+":"+minute;
+	day[0] = date.getDate();
+	day[1] = day[0];
+	month[0] = date.getMonth() + 1;
+	month[1] = month[0];
+	year[0] = date.getFullYear();
+	year[1] = year[0];
+	hour[0] = date.getHours() + 1;
+	hour[1] = hour[0] + 1;
+	var minute = "00";
+	if(hour[1] > 23){
+		var i = 1;
+		if(hour[0] > 23){
+			i = 0;
+		}
+		for(i; i < 2; i++){
+			hour[i] = hour[i] % 24;
+			day[i] = day[i] + 1;
+		}
+	}
+	if(day[1] > 31){
+		var i = 1;
+		if(day[0] > 31){
+			i = 0;
+		}
+		for(i; i < 2; i++){
+			day[i] = day[i] % 31;
+			month[i] = month[i] + 1;
+		}
+	}
+	if(month[1] > 12){
+		var i = 1;
+		if(month[0] > 12){
+			i = 0;
+		}
+		for(i; i < 2; i++){
+			month[i] = month[i] % 12;
+			year[i] = year[i] + 1;
+		}
+	}
+
+	document.getElementById("startdate").value=day[0]+"."+month[0]+"."+year[0];
+	document.getElementById("starttime").value=hour[0]+":"+minute;
+	document.getElementById("enddate").value=day[1]+"."+month[1]+"."+year[1];
+	document.getElementById("endtime").value=hour[1]+":"+minute;
 }
 
 $.ajax({ url: "events.json" }).done(function(events) {
