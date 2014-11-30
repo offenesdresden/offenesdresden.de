@@ -21,7 +21,7 @@ $challenge = $_POST["challenge"];
 if($challenge == $_SESSION["challenge"]){
 	sendEvent($_SESSION["title"], $_SESSION["xml"]);
 }else{
-	echo "<p>Der eingegebene Key ist ungültig.</p>";
+	echo "<p>Der eingegebene Key ist ung&uuml;ltig.</p>";
 }
 
 session_destroy();
