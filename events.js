@@ -129,7 +129,7 @@ function setDate(){
 
 $.ajax({ url: "events.json" }).done(function(events) {
     var now = Date.now();
-    var article = $("<article class='events'><h2>Nächste Treffen</h2></article>");
+    var article = $('<article class="events"><h2>Nächste Treffen</h2></article>');
     var ul = $("<ul></ul>");
     events.forEach(function(event) {
         event.time = new Date(event.date).getTime();
@@ -140,7 +140,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
         return e1.time - e2.time;
     });
     events.forEach(function(event) {
-        var li = $("<li><p class='title'></p><p><span class='date'></span> <a>Ort</a></p></li>");
+        var li = $('<li><p class="title"></p><p><span class="date"></span> <a>Ort</a></p></li>');
         li.find('.title').text(event.title);
         var d = new Date(event.date);
         li.find('.date').text(
@@ -155,7 +155,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
     });
     ul.append($('<li><a href onClick="addevent()">Termin einreichen</a>.</li>'));
     article.append(ul);
-    article.append($("<p>Die Termine sind auch <a href='events.json'>maschinenlesbar erhältlich</a>.</p>"));
+    article.append($('<p>Die Termine sind auch <a href="events.json">maschinenlesbar erhältlich</a>.</p>'));
     $('#main').prepend(article);
 }).fail(function() {
     console.error("ajax", arguments);
