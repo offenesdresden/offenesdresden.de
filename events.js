@@ -61,7 +61,7 @@ function validate(){
 	var check = checkFilled();
 	if(checkDate() && checkFilled()){
 		form.removeAttribute("onSubmit");
-		form.setAttribute("action", "addevent.php");
+		form.setAttribute("action", "http://jkliemann.de/offenesdresden.de/addevent.php");
 	}else{
 		//alert("Falsche Eingabe!");
 	}
