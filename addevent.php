@@ -97,8 +97,8 @@ if(!$start or !$end){
 		<legend>Eventdaten</legend>
 		<?php
 		echo "<p><label>Titel:<br/>".$title."</label></p>";
-		echo "<p><label>Start:<br/>".$startdate." ".$starttime."</label></p>";
-		echo "<p><label>Ende: <br/>".$enddate." ".$endtime."</label></p>";
+		echo "<p><label>Start:<br/>".$start["day"].".".$start["month"].".".$start["year"]." ".$start["hour"].":".$start["minute"]."</label></p>";
+		echo "<p><label>Ende: <br/>".$end["day"].".".$end["month"].".".$end["year"]." ".$end["hour"].":".$end["minute"]."</label></p>";
 		echo "<p><label>Ort:<br/>".$location."</label></p>";
 		echo "<p><label>Link:<br/>".$link."</label></p>";
 		echo "<p><label>Kategorie: <br/>".$type."</label></p>";

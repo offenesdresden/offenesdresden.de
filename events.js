@@ -13,6 +13,10 @@ function isoDate(day, month, year, hour, minute){
 	if(day > 31 || month > 12 || hour > 23 || minute > 59){
 		return false;
 	}
+	month = leadingZero(month);
+	day = leadingZero(day);
+	hour = leadingZero(hour);
+	minute = leadingZero(minute);
 	var iso = year+"-"+month+"-"+day+"T"+hour+":"+minute+":00";
 	return iso;
 }
@@ -68,6 +72,7 @@ function validate(){
 }
 
 function leadingZero(date){
+	date = parseInt(date);
 	if(date < 10){
 		return "0" + date;
 	}else{
@@ -120,7 +125,12 @@ function setDate(){
 			year[i] = year[i] + 1;
 		}
 	}
-
+	for(var i = 0; i < 2; i++){
+		day[i] = leadingZero(day[i]);
+		month[i] = leadingZero(month[i]);
+		hour[i] = leadingZero(hour[i]);
+		minute[i] = leadingZero(minute[i]);
+	}
 	document.getElementById("startdate").value=day[0]+"."+month[0]+"."+year[0];
 	document.getElementById("starttime").value=hour[0]+":"+minute;
 	document.getElementById("enddate").value=day[1]+"."+month[1]+"."+year[1];
