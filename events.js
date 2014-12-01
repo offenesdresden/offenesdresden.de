@@ -63,7 +63,7 @@ function validate(){
 		form.removeAttribute("onSubmit");
 		form.setAttribute("action", "http://jkliemann.de/offenesdresden.de/addevent.php");
 	}else{
-		//alert("Falsche Eingabe!");
+		alert("Falsche Eingabe!");
 	}
 }
 
