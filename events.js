@@ -27,16 +27,6 @@ function checkDate(){
 	var starttime = document.getElementById("starttime").value.split(":");
 	var endtime = document.getElementById("endtime").value.split(":");
 	var current = new Date();
-/*	for(var i = 0; i < 3; i++){
-		if(isNaN(startdate[i]) || isNaN(enddate[i])){
-			return false;
-		}
-	}
-	for(var i = 0; i < 2; i++){
-		if(isNaN(starttime[i]) || isNaN(endtime[i])){
-			return false;
-		}
-	}*/
 	start = Date.parse(isoDate(startdate[0], startdate[1], startdate[2], starttime[0], starttime[1]));
 	end = Date.parse(isoDate(enddate[0], enddate[1], enddate[2], endtime[0], endtime[1]));
 	if(start < current || end < start || isNaN(start) || isNaN(end)){
