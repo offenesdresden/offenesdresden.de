@@ -59,7 +59,7 @@ ul.tabs li a {
 </style>
 </head>
 <body onload="setDate()">
-	<form id="eventform" onSubmit="validate()" method="post">
+	<form id="eventform" onSubmit="return validate()" action="http://jkliemann.de/offenesdresden.de/addevent.php" method="post">
 		<!-- tabbed menu für Auswhal zwischen News und Event -->
 		<ul class="tabs dev" id="ul" style="">
 			<li id="levent"><a href="#event">Event</a></li>
