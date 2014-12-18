@@ -4,25 +4,100 @@
 <meta charset="utf-8">
 <style type="text/css">
 /* for std screen */
-label{display:block;margin-top:1ex;}
-label[for]:after { content:":"; }
+*,body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+legend{
+	text-align: center;
+}
+label{
+	display: block;
+	margin-top: 1ex;
+}
+label[for]:after {
+	content:":";
+}
+.dev{
+	/* still developing - disable to see */
+	display: none !important;
+}
+div.formset{
+	display: none;
+}
+div.formset:target{
+	display: block !important;
+}
+ul.tabs{
+	margin: 0px;
+	border-radius: 10px;
+	display: table;
+	height: 2.4em;
+	padding: 0.1em;
+	width:100%;
+}
+ul.tabs li{
+	list-style: outside none none;
+	margin-left: 0px;
+	display: table-cell;
+	border-radius: 10px;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+	text-decoration: underline;
+}
+ul.tabs li a {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+	text-decoration: none;
+	border-radius: 0px;
+	font-weight: bold;
+}
 </style>
 </head>
 <body onload="setDate()">
-	<form id="eventform" onSubmit="validate()" method="post">
-		<fieldset><legend>Event einreichen</legend>
+	<form id="eventform" onSubmit="return validate()" action="http://jkliemann.de/offenesdresden.de/addevent.php" method="post">
+		<!-- tabbed menu für Auswhal zwischen News und Event -->
+		<ul class="tabs dev" id="ul" style="">
+			<li id="levent"><a href="#event">Event</a></li>
+			<li id="lnews"><a href="#news">News</a></li>
+		</ul>
+		<fieldset>
+			<div class="formset" id="event">
+			<legend>Event einreichen</legend>
 			<label for="title">Titel</label><input id="title" type="text" width="250" name="title"/>
 			<label for="startdate">Start</label><input id="startdate" type="text" name="startdate"/><input id="starttime" type="text" name="starttime"/>
 			<label for="enddate">Ende</label> <input id="enddate" type="text" name="enddate"/><input id="endtime" type="text" name="endtime"/>
 			<label for="location">Ort</label><input id="location" type="text" name="location"/>
 			<label for="link">Link</label><input id="link" type="text" name="link"/>
 			<label for="type">Kategorie</label> <select id="type" name="type">
-					<option value="OpenData">OpenData</option>
+					<option value="OpenData" selected="selected">OpenData</option>
 					<option value="c3d2">c3d2.de/calendar.html</option>
 				</select></p>
 			<label for="mail">E-Mail</label><input id="mail" type="text" name="mail"/>
 			<label></label>
 			<input type="submit" Value="Absenden">
+			</div>
+		<!-- zweites "fieldset" für news, form-elm heißen zur Unterscheidung auch anders -->
+			<div class="formset dev" id="news">
+			<legend>News vorschlagen</legend>
+			<label for="news_title">Titel</label><input id="news_title" type="text" width="250" name="news_title"/>
+			<label for="news_startdate">Start</label><input id="news_startdate" type="text" name="news_startdate"/><input id="news_starttime" type="text" name="news_starttime"/>
+			<label for="news_enddate">Ende</label> <input id="news_enddate" type="text" name="news_enddate"/><input id="news_endtime" type="text" name="news_endtime"/>
+			<label for="news_location">Ort</label><input id="news_location" type="text" name="news_location"/>
+			<label for="news_link">Link</label><input id="news_link" type="text" name="news_link"/>
+			<label for="news_type">Kategorie</label> <select id="news_type" name="news_type">
+					<option value="c3d2" selected="selected">c3d2.de/calendar.html</option>
+					<option value="OpenData">OpenData</option>
+				</select></p>
+			<label for="news_mail">E-Mail</label><input id="news_mail" type="text" name="news_mail"/>
+			<label></label>
+			<input name="news_submit" id="news_submit" type="submit" Value="Absenden">
+			</div>
 		</fieldset>
 	</form>
 	<script type="text/javascript" src="events.js"></script>
