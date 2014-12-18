@@ -107,7 +107,7 @@ if(!$start or !$end){
 		<form action="challenge.php" method="post">
 		<?php echo "<input type='hidden' name='sid' value='".session_id()."'/>";?>
 		<p>E-Mail wurde versandt.</p>
-		<p><label>Bestätigungscode:<br/><input type="text" name="challenge"/></label></p>
+		<p><label>Best&auml;tigungscode:<br/><input type="text" name="challenge"/></label></p>
 		<p><label><input type="submit" Value="Absenden"></label></p>
 		</form>
 	</fieldset>

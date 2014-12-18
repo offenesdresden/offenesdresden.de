@@ -6,7 +6,7 @@ function sendEvent($title, $content){
 	global $message;
 	$rcv = array(
 		"OpenData" => "rob.tranquillo@gmx.de", //rob.tranquillo@gmx.de
-		"c3d2" => "c3d2@lists.c3d2.de", //c3d2@lists.c3d2.de
+		"c3d2" => "mail@c3d2.de", //mail@c3d2.de
 	);
 
 	$to = $rcv[$_SESSION["type"]];

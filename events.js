@@ -6,7 +6,7 @@ function pad(s, l, p) {
 }
 
 function addevent(){ /* todo:maybe preferable add a layer to current pages content than opening a window */
-	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=530");
+	window.open("addevent.html", "Event hinzufügen", "status=0, width=300, height=570");
 }
 
 function isoDate(day, month, year, hour, minute){
