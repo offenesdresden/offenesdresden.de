@@ -22,13 +22,14 @@ $challenge = $_POST["challenge"];
 if($challenge == $_SESSION["challenge"]){
 	sendEvent($_SESSION["title"], $_SESSION["xml"]);
 }else{	/* todo:move formatting tags to the receiver or drop 'em */
-	$message =  "Der eingegebene Key ist ung&uuml;ltig.";
+	$message =  "Der eingegebene Key ist ungültig.";
 }
 
 session_destroy();
 ?>
 <html>
 <head>
+<meta charset="utf-8">
 </head>
 <body>
 <p>
