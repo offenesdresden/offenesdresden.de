@@ -127,6 +127,15 @@ function setDate(){
 	document.getElementById("endtime").value=hour[1]+":"+minute;
 }
 
+function setLocation(){
+	document.getElementById("location").value="GHCQ (http://www.c3d2.de/space.html)";
+}
+
+function setDefault(){
+	setLocation();
+	setDate();
+}
+
 $.ajax({ url: "events.json" }).done(function(events) {
     var now = Date.now();
     var article = $('<article class="events"><h2>Nächste Treffen</h2></article>');
