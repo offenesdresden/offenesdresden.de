@@ -83,7 +83,7 @@ function setDate(){
 	year[0] = date.getFullYear();
 	year[1] = year[0];
 	hour[0] = date.getHours() + 1;
-	hour[1] = hour[0] + 1;
+	hour[1] = hour[0] + 2;
 	var minute = "00";
 	if(hour[1] > 23){
 		var i = 1;
