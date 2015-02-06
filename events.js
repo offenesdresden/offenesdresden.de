@@ -138,7 +138,7 @@ function setDefault(){
 
 $.ajax({ url: "events.json" }).done(function(events) {
     var now = Date.now();
-    var article = $('<article class="events"><h2>Nächste Treffen</h2><p>Die finden alle 2 Wochen, am 1. und 3. Mittwoch im Monat statt</p></article>');
+    var article = $('<article class="events"><h2>Nächste Treffen</h2><p>turnusmässig alle 2 Wochen, am 1. und 3. Mittwoch im Monat</p></article>');
     var ul = $("<ul></ul>");
     events.forEach(function(event) {
         event.time = new Date(event.date).getTime();
