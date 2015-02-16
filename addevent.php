@@ -54,10 +54,11 @@ function challengeString(){
 
 function sendChallenge($address, $subject){
 	$subject .= " - Verifizierung";
-	$body = challengeString();
+	$challenge = challengeString();
+	$body = "Zur Verifizierung Ihrer Email klicken sie bitte auf folgenden Link:\n http://jkliemann.de/offenesdresden.de/challenge.php?id=".session_id()."&code=".$challenge;
 	$header = "From: no-reply@offenesdresden.de\r\nX-Mailer: PHP/".phpversion();
 	if(mail($address, $subject, $body, $header)){
-		return $body;
+		return $challenge;
 	}else{
 		echo "Es ist ein Fehler aufgetreten.\n";
 	}
@@ -105,12 +106,7 @@ if(!$start or !$end){
 		echo "<p><label>Kategorie: <br/>".$type."</label></p>";
 		echo "<p><label>E-Mail:<br/>".$mail."</label></p>";
 		?>
-		<form action="challenge.php" method="post">
-		<?php echo "<input type='hidden' name='sid' value='".session_id()."'/>";?>
 		<p>E-Mail wurde versandt.</p>
-		<p><label>Bestätigungscode:<br/><input type="text" name="challenge"/></label></p>
-		<p><label><input type="submit" Value="Absenden"></label></p>
-		</form>
 	</fieldset>
 </body>
 </html>

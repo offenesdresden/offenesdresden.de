@@ -1,4 +1,5 @@
 <?php
+session_id($_GET["id"]);
 session_start();
 
 $message = "";
@@ -18,11 +19,11 @@ function sendEvent($title, $content){
 	}
 }
 
-$challenge = $_POST["challenge"];
+$challenge = $_GET["code"];
 if($challenge == $_SESSION["challenge"]){
 	sendEvent($_SESSION["title"], $_SESSION["xml"]);
 }else{	/* todo:move formatting tags to the receiver or drop 'em */
-	$message =  "Der eingegebene Key ist ungültig.";
+	$message =  "Der Link ist ungültig.";
 }
 
 session_destroy();
