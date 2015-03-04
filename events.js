@@ -138,7 +138,7 @@ function setDefault(){
 
 $.ajax({ url: "events.json" }).done(function(events) {
     var now = Date.now();
-    var article = $('<article class="events"><h2>Nächste Treffen</h2><p> Jeden 1. und 3. Mittwoch im Monat bist auch Du herzlich eingeladen. Gern kannst Du auch schon vorher bescheid sagen, das Du kommst, via <a href='http://www.meetup.com/OK-Lab-Dresden'>meetup</a></p></article>');
+    var article = $('<article class="events"><h2>Nächste Treffen</h2><p> Jeden 1. und 3. Mittwoch im Monat bist auch Du herzlich eingeladen. Gern kannst Du auch schon vorher bescheid sagen, das Du kommst, via <a href="http://www.meetup.com/OK-Lab-Dresden">meetup</a></p></article>');
     var ul = $("<ul></ul>");
     events.forEach(function(event) {
         event.time = new Date(event.date).getTime();
