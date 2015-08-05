@@ -159,7 +159,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
                 pad(d.getHours(), 2, "0") + ":" +
                 pad(d.getMinutes(), 2, "0")
         );
-        li.find('.info').text('<br/>' + event.info + '<br/>');
+        li.find('.info').text("\n" + event.info + "\n");
         li.find('a').attr('href', event.location);
         ul.append(li);
     });
