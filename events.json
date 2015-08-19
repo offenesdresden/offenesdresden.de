@@ -26,6 +26,16 @@
 },{
     "title": "Open-Data-Treffen",
     "date": "2015-08-19T19:00:00+0200",
+    "location": "http://www.medienkulturzentrum.de/kontakt/",
+    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
+},{
+    "title": "Open-Data-Treffen",
+    "date": "2015-09-02T19:00:00+0200",
+    "location": "http://www.c3d2.de/space.html",
+    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
+},{
+    "title": "Open-Data-Treffen",
+    "date": "2015-09-16T19:00:00+0200",
     "location": "http://www.c3d2.de/space.html",
     "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
 }]
