@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #4489ca;
-  color: white;
-  font-family: sans-serif;
+	font-family: "Titillium Web";
+	font-weight: 400;
+	font-size: 16px;
+	color: #2B2B2B;
 }
 #poster {
   display: block;
@@ -58,23 +60,24 @@ footer a {
   display: block;
   margin: 0;
   padding: 0;
+  padding-bottom: 1.6em;
 }
-/* article separator dots */
-#main article:after {
-  clear: both;
-  display: block;
+
+
+/* article separator dots wurden entfernt */
+
+
+#viescher {
   text-align: center;
-  color: #ddd;
-  font-size: 250%;
-  content: '•';
-  margin: 0 auto;
-  padding: 1em 0;
 }
+
+
 #main article {
   display: block;
   max-width: 60em;
   margin: 0 auto;
   padding: 0 2em;
+  padding-top: 2em;
   max-width: 50em;
 }
 #main article h2, #main article h3 {
