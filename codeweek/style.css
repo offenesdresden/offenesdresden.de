@@ -6,6 +6,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	color: #2B2B2B;
+        line-height: 1.5em;
 }
 a {
     text-decoration: none;
