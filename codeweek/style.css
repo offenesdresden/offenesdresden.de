@@ -7,6 +7,16 @@ body {
 	font-size: 16px;
 	color: #2B2B2B;
 }
+a {
+    text-decoration: none;
+    color: #4489ca;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #4489ca;
+}
 #poster {
   display: block;
   background-color: black;
@@ -23,10 +33,11 @@ body {
 h1 {
   text-align: center;
   margin: 0 auto;
-  padding: 0 1em 0.5em;
+  padding: 0 1em 0.2em;
   font-size: 400%;
   /* font-family: serif; */
   font-weight: 400;
+  color: white;
 }
 h1 .eu {
   color: rgba(255, 255, 255, 0);
@@ -48,6 +59,7 @@ footer p {
   text-align: center;
   margin: 0;
   padding: 0.5em 1em;
+  color: white;
 }
 footer a {
   color: white;
@@ -74,7 +86,6 @@ footer a {
 
 #main article {
   display: block;
-  max-width: 60em;
   margin: 0 auto;
   padding: 0 2em;
   padding-top: 2em;
@@ -91,6 +102,9 @@ footer a {
 #main article h2 {
   color: black;
   padding-top: 1em;
+}
+#main article h4 {
+    color: #777;
 }
 #main article aside.left {
   float: left;
@@ -109,8 +123,12 @@ footer a {
   width: 30em;
   margin: 0 auto;
 }
+#main article ul {
+  list-style-type: square;
+  padding-left: 1.2em;
+}
 #main article li { 
-  padding: 0.5em 0;
+  padding: 0.2em 0;
 }
 .date { 
   text-align: center;
