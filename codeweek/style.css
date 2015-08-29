@@ -39,6 +39,7 @@ h1 {
   /* font-family: serif; */
   font-weight: 400;
   color: white;
+  line-height: 0.7em;
 }
 h1 .eu {
   color: rgba(255, 255, 255, 0);
