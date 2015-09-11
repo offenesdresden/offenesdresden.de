@@ -145,9 +145,8 @@ footer:hover a {
     margin: 0;
     padding: 0;
 }
-.events title {
-    font-weight: 900;
-    font-size:200%;
+.events .title {
+    font-weight: bold;
     color: #333;
 }
 .events .date {
