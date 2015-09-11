@@ -147,6 +147,7 @@ footer:hover a {
 }
 .events title {
     font-weight: 900;
+    font-size:200%;
     color: #333;
 }
 .events .date {
