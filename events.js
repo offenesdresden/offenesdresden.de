@@ -150,7 +150,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
     });
     events.forEach(function(event) {
         var li = $('<li><p class="date"></p><p><span class="title"></span><span class="info"></span> <a>Ort</a></p></li>');
-        li.find('.title').text('<b>'+ event.title +'</b>');
+        li.find('.title').text(event.title);
         var d = new Date(event.date);
         li.find('.date').text(
             d.getDate() + "." +
