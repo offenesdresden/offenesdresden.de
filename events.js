@@ -149,16 +149,16 @@ $.ajax({ url: "events.json" }).done(function(events) {
         return e1.time - e2.time;
     });
     events.forEach(function(event) {
-        var li = $('<li><p class="title"></p><p><span class="date"></span><span class="info"></span> <a>Ort</a></p></li>');
+        var li = $('<li><p class="date"></p><p><span class="title"></span><span class="info"></span> <a>Ort</a></p></li>');
         li.find('.title').text('<b>'+ event.title +'</b>');
         var d = new Date(event.date);
-        li.find('.date').text( '<i>' +
+        li.find('.date').text(
             d.getDate() + "." +
                 (d.getMonth() + 1) + "." +
                 d.getFullYear() + " " +
                 pad(d.getHours(), 2, "0") + ":" +
                 pad(d.getMinutes(), 2, "0")
-         +'</i>');
+        );
         li.find('.info').html("<br>" + event.info + "<br>");
         li.find('a').attr('href', event.location);
         ul.append(li);
