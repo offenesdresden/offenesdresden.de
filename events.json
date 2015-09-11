@@ -5,16 +5,6 @@
     "info": "<a href='http://www.isaf2015.info/?page_id=106'>TUD-Landtechnik-ZINT</a>"
 },{
     "title": "Open-Data-Treffen",
-    "date": "2015-06-17T19:00:00+0200",
-    "location": "http://www.c3d2.de/space.html",
-    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
-},{
-    "title": "Open-Data-Treffen",
-    "date": "2015-07-01T19:00:00+0200",
-    "location": "http://www.c3d2.de/space.html",
-    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
-},{
-    "title": "Open-Data-Treffen",
     "date": "2015-10-07T19:00:00+0200",
     "location": "http://www.c3d2.de/space.html",
     "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
@@ -22,12 +12,20 @@
     "title": "GeekGirlsCarrot - CodeweekEU",
     "date": "2015-10-10T09:00:00+0200",
     "location": "noch offen, bitte anmelden",
-    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>. Was is <a href='http://geekgirlscarrots.org>Geek Girls Carrots</a>"
+    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>. Was is <a href='http://geekgirlscarrots.org>Geek Girls Carrots</a>",
+    "mail": "codeweek@offenesdresden.de"
 },{
     "title": "Kinder/Jugend Raspberry Pi Bastelworkshop - CodeweekEU",
     "date": "2015-10-17T09:00:00+0200",
     "location": "Im <a href='http://konglomerat.org'>Rosenwerk Dresden</a>",
-    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
+    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>",
+    "mail": "codeweek@offenesdresden.de"
+},{
+    "title": "Open Data Hackathon - CodeweekEU",
+    "date": "2015-10-17T09:00:00+0200",
+    "location": "Im <a href='http://konglomerat.org'>Rosenwerk Dresden</a>",
+    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>",
+    "mail": "codeweek@offenesdresden.de"
 },{
     "title": "Open-Data-Treffen",
     "date": "2015-10-21T19:00:00+0200",
@@ -37,5 +35,6 @@
     "title": "Open-Data-Treffen",
     "date": "2015-11-05T19:00:00+0200",
     "location": "wird noch bekannt gegeben",
-    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen"
+    "info": "Allgemeine Infos: http://pad.okfn.org/p/oklab-dresden. Meetingnotizen: http://pad.okfn.org/p/oklab-dresden-treffen",
+    "mail": "treffen@offenesdresden.de"
 }]
