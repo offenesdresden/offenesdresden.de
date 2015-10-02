@@ -140,3 +140,10 @@ footer a {
 .time { 
   text-align: center;
 }
+
+.map {
+    text-align: center;
+}
+.map img {
+    border: 1px solid #333;
+}
