@@ -64,7 +64,12 @@
         </p>
         <form id="eventform" method="post">
             <fieldset><legend>Anmeldung:</legend>
-            <label for="name">Wie heißt Du: </label><input id="name" type="text" width="250" name="name"/>
+                <label for="event">Veranstaltung: </label><select name="event"/>
+                    <option value="codecarrot">GeekGirlsCarots - Code Carrot</option>
+                    <option value="piworkshop">Pi-Workshop</option>
+                    <option value="odhacktahon">Open Data Hackathon</option>
+                </select>
+            <br><label for="name">Wie heißt Du: </label><input id="name" type="text" width="250" name="name"/>
             <br><label for="mail">Deine E-Mail </label><input id="mail" type="text" name="mail"/>
             <br><label for="city">in welcher Stadt wohnst Du: </label><input id="city" type="text" name="city"/>
             <br><label for="interests">was sind Deine Interessen: </label> <input id="interests" type="text" name="interests"/>
