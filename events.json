@@ -1,20 +1,8 @@
 [{
-    "title": "Open-Data-Treffen",
-    "date": "2015-09-16T19:00:00+0200",
-    "location": "http://www.c3d2.de/space.html",
-    "info": "<a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
-    "mail": "treffen@offenesdresden.de"
-},{
-    "title": "Open-Data-Treffen",
-    "date": "2015-10-07T19:00:00+0200",
-    "location": "http://www.c3d2.de/space.html",
-    "info": "<a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
-    "mail": "treffen@offenesdresden.de"
-},{
     "title": "GeekGirlsCarrot - CodeweekEU",
     "date": "2015-10-14T19:00:00+0200",
-    "location": "noch offen, bitte anmelden",
-    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>. Was is <a href='http://geekgirlscarrots.org>Geek Girls Carrots</a>",
+    "location": "Impact Loft Coworking",
+    "info": "Im Rahmen der <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a> Veranstalten die <a href='http://geekgirlscarrots.org>Geek Girls Carrots</a> ein meetup (<a href='https://www.facebook.com/events/727221487382388/'>facebook link</a>) mit den Gästen Almuth Sürmann von www.akili-innovation.com and Val Racheeva Gründerrin und CEO von WEFOUND.org"
     "mail": "codeweek@offenesdresden.de"
 },{
     "title": "Kinder/Jugend Raspberry Pi Bastelworkshop - CodeweekEU",
@@ -31,12 +19,12 @@
 },{
     "title": "Open-Data-Treffen",
     "date": "2015-10-21T19:00:00+0200",
-    "location": "wird noch bekannt gegeben",
-    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>."
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>"
 },{
     "title": "Open-Data-Treffen",
     "date": "2015-11-05T19:00:00+0200",
-    "location": "wird noch bekannt gegeben",
-    "info": "<a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
     "mail": "treffen@offenesdresden.de"
 }]
