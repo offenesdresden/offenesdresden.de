@@ -149,7 +149,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
         return e1.time - e2.time;
     });
     events.forEach(function(event) {
-        var li = $('<li><p class="date"></p><p><span class="title"></span><span class="info"></span> <a>Ort</a></p></li>');
+        var li = $('<li><p class="date"></p><p><span class="title"></span><span class="info"></span> Ort: <location> </p></li>');
         li.find('.title').text(event.title);
         var d = new Date(event.date);
         li.find('.date').text(
@@ -160,7 +160,7 @@ $.ajax({ url: "events.json" }).done(function(events) {
                 pad(d.getMinutes(), 2, "0")
         );
         li.find('.info').html("<br>" + event.info + "<br>");
-        li.find('a').attr('href', event.location);
+        li.find('location').html(event.location);
         ul.append(li);
     });
     ul.append($('<li><a href onClick="addevent()">Termin einreichen</a>.</li>'));
