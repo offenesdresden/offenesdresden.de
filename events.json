@@ -9,13 +9,11 @@
     "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
     "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
     "mail": "treffen@offenesdresden.de"
-},
-{
-    "title": "open data meetup @ 32C3",
-    "date": "2015-12-27T12:00:00+2400",
-    "location": "<a href='https://events.ccc.de/congress/2015/wiki/Static:CCH'>Hamburg CCH</a> meet us at <a href='https://events.ccc.de/congress/2015/wiki/Assembly:Open_Knowledge_Labs'>our assembly</a>",
-    "info": "Wir sind natürlich auch beim <a href='https://events.ccc.de/2015/11/04/32c3-gated-communities/'>Chaos Communication Congress</a>. Komm vor bei, trink mit uns ne Mate."
-   
+},{
+    "title": "open data meetup 32C3",
+    "date": "2015-12-27T00:00:00+0200",
+    "location": "aaa",
+    "info": "bbb"
 },{
     "title": "open data meetup Dresden",
     "date": "2016-01-06T19:00:00+0200",
