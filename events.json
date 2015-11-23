@@ -1,29 +1,42 @@
 [{
-    "title": "GeekGirlsCarrot - CodeweekEU",
-    "date": "2015-10-14T19:00:00+0200",
-    "location": "Impact Loft Coworking",
-    "info": "Im Rahmen der <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a> Veranstalten die <a href='http://geekgirlscarrots.org>Geek Girls Carrots</a> ein meetup (<a href='https://www.facebook.com/events/727221487382388/'>facebook link</a>) mit den Gästen Almuth Sürmann von www.akili-innovation.com and Val Racheeva Gründerrin und CEO von WEFOUND.org",
-    "mail": "codeweek@offenesdresden.de"
-},{
-    "title": "Kinder/Jugend Raspberry Pi Bastelworkshop - CodeweekEU",
-    "date": "2015-10-17T09:00:00+0200",
-    "location": "Im <a href='http://konglomerat.org'>Rosenwerk Dresden</a>",
-    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>",
-    "mail": "codeweek@offenesdresden.de"
-},{
-    "title": "Open Data Hackathon - CodeweekEU",
-    "date": "2015-10-17T09:00:00+0200",
-    "location": "Im <a href='http://konglomerat.org'>Rosenwerk Dresden</a>",
-    "info": "mach mit zur <a href='offnesdresden.de/codeweek'>CodeweekEU in Dresden</a>",
-    "mail": "codeweek@offenesdresden.de"
-},{
-    "title": "Open-Data-Treffen",
-    "date": "2015-10-21T19:00:00+0200",
+    "title": "open data meetup Dresden",
+    "date": "2015-12-02T19:00:00+0200",
     "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
     "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>"
 },{
     "title": "Open-Data-Treffen",
-    "date": "2015-11-05T19:00:00+0200",
+    "date": "2015-12-16T19:00:00+0200",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
+    "mail": "treffen@offenesdresden.de"
+},
+{
+    "title": "open data meetup @ 32C3",
+    "date": "2015-12-26T12:00:00+9200",
+    "location": "<a href='https://events.ccc.de/congress/2015/wiki/Static:CCH'>Hamburg CCH</a> meet us at <a href='https://events.ccc.de/congress/2015/wiki/Assembly:Open_Knowledge_Labs'>our assembly</a>",
+    "info": "Wir sind natürlich auch beim <a href='https://events.ccc.de/2015/11/04/32c3-gated-communities/'>Chaos Communication Congress</a>. Komm vor bei, trink mit uns ne Mate."
+   
+},{
+    "title": "Open-Data-Treffen",
+    "date": "2016-01-06T19:00:00+0200",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
+    "mail": "treffen@offenesdresden.de"
+},{
+    "title": "Open-Data-Treffen",
+    "date": "2016-01-20T19:00:00+0200",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
+    "mail": "treffen@offenesdresden.de"
+},{
+    "title": "Open-Data-Treffen",
+    "date": "2016-02-03T19:00:00+0200",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
+    "mail": "treffen@offenesdresden.de"
+},{
+    "title": "Open-Data-Treffen",
+    "date": "2016-02-17T19:00:00+0200",
     "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
     "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
     "mail": "treffen@offenesdresden.de"
