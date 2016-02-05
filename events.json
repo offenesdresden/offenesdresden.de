@@ -1,41 +1,28 @@
 [{
     "title": "open data meetup Dresden",
-    "date": "2015-12-02T19:00:00+0100",
-    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
-    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>"
-},{
-    "title": "open data meetup Dresden",
-    "date": "2015-12-16T19:00:00+0100",
-    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
-    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
-    "mail": "treffen@offenesdresden.de"
-},{
-    "title": "open data meetup @ 32C3",
-    "date": "2015-12-27T00:00:00+0100",
-    "location": "<a href='https://events.ccc.de/congress/2015/wiki/Static:CCH'>Hamburg CCH</a>",
-    "info": "Wir sind natürlich auch beim <a href='https://events.ccc.de/2015/11/04/32c3-gated-communities/'>Chaos Communication Congress</a>. Komm vor bei, trink mit uns ne Mate."
-},{
-    "title": "open data meetup Dresden",
-    "date": "2016-01-06T19:00:00+0100",
-    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
-    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
-    "mail": "treffen@offenesdresden.de"
-},{
-    "title": "open data meetup Dresden",
-    "date": "2016-01-20T19:00:00+0100",
-    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
-    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
-    "mail": "treffen@offenesdresden.de"
-},{
-    "title": "open data meetup Dresden",
-    "date": "2016-02-03T19:00:00+0100",
-    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
-    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
-    "mail": "treffen@offenesdresden.de"
-},{
-    "title": "open data meetup Dresden",
     "date": "2016-02-17T19:00:00+0100",
     "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
-    "info": "Frickeln, spinnen, quatschen, Welt verbesseren. <a href='http://pad.okfn.org/p/oklab-dresden'>Allgemeine Infos</a> / <a href='http://pad.okfn.org/p/oklab-dresden-treffen'>Meetingnotizen</a>",
+    "info": "Wir treffen uns, um gemeinsam an Civic Apps für Dresden zu arbeiten. Neueinsteigerinnen und Menschen, die nicht programmieren, sind immer herzlich willkommen!. <a href='http://www.meetup.com/OK-Lab-Dresden/'>Finde uns auf meetup.com</a>"
+},{
+    "title": "open data meetup Dresden",
+    "date": "2016-03-03T19:00:00+0100",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Wir treffen uns, um gemeinsam an Civic Apps für Dresden zu arbeiten. Neueinsteigerinnen und Menschen, die nicht programmieren, sind immer herzlich willkommen!. <a href='http://www.meetup.com/OK-Lab-Dresden/'>Finde uns auf meetup.com</a>",
     "mail": "treffen@offenesdresden.de"
+},{
+    "title": "open data meetup Dresden",
+    "date": "2016-03-16T19:00:00+0100",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Wir treffen uns, um gemeinsam an Civic Apps für Dresden zu arbeiten. Neueinsteigerinnen und Menschen, die nicht programmieren, sind immer herzlich willkommen!. <a href='http://www.meetup.com/OK-Lab-Dresden/'>Finde uns auf meetup.com</a>"
+},{
+    "title": "open data meetup Dresden",
+    "date": "2016-04-06T19:00:00+0100",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Wir treffen uns, um gemeinsam an Civic Apps für Dresden zu arbeiten. Neueinsteigerinnen und Menschen, die nicht programmieren, sind immer herzlich willkommen!. <a href='http://www.meetup.com/OK-Lab-Dresden/'>Finde uns auf meetup.com</a>",
+    "mail": "treffen@offenesdresden.de"
+},{
+    "title": "open data meetup Dresden",
+    "date": "2016-04-20T19:00:00+0100",
+    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "info": "Wir treffen uns, um gemeinsam an Civic Apps für Dresden zu arbeiten. Neueinsteigerinnen und Menschen, die nicht programmieren, sind immer herzlich willkommen!. <a href='http://www.meetup.com/OK-Lab-Dresden/'>Finde uns auf meetup.com</a>"
 }]
