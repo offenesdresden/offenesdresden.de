@@ -149,18 +149,28 @@ $.ajax({ url: "events.json" }).done(function(events) {
         return e1.time - e2.time;
     });
     events.forEach(function(event) {
-        var li = $('<li><p class="date"></p><p><span class="title"></span><span class="info"></span> Ort: <location> </p></li>');
+        var li = $('<li><p class="date"></p><p><span class="title"></span><span class="info"></span></p></li>');
         li.find('.title').text(event.title);
         var d = new Date(event.date);
         li.find('.date').text(
             d.getDate() + "." +
                 (d.getMonth() + 1) + "." +
-                d.getFullYear() + " " +
-                pad(d.getHours(), 2, "0") + ":" +
-                pad(d.getMinutes(), 2, "0")
+                d.getFullYear() +
+                (event.date.indexOf("T") == -1 ? "" :
+                 (" " +
+                  pad(d.getHours(), 2, "0") + ":" +
+                  pad(d.getMinutes(), 2, "0")
+                 ))
         );
-        li.find('.info').html("<br>" + event.info + "<br>");
-        li.find('location').html(event.location);
+        if (event.info) {
+            li.find('.info').html("<br>" + event.info + "<br>");
+        }
+        if (event.location) {
+            li.append(" Ort: ");
+            var loc = $('<span></span>');
+            li.append(loc);
+            loc.html(event.location);
+        }
         ul.append(li);
     });
     ul.append($('<li><a href onClick="addevent()">Termin einreichen</a>.</li>'));
