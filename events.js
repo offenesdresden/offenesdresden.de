@@ -138,7 +138,7 @@ function setDefault(){
 
 $.ajax({ url: "events.json" }).done(function(events) {
     var now = Date.now();
-    var article = $('<article class="events"><h2>Treffen und Kontakt</h2><p>Wir treffen uns jeden 23.des Monats um gmeinsam an unseren Projekten zu arbeiten, miteinander zu sprechen und interessierte Menschen Willkommen zu heißen. Bitte achtet bei Interesse auf den Twitterfeed wegen der location! Und meldet euch direkt bei uns wenn noch Fragen vorab bestehen. Ankündigungen können auch via. <a href="http://www.meetup.com/OK-Lab-Dresden">meetup</a> abboniert werden. <br><br> Für online Kommunikation nutzen wir ein <a href="https://slack.com/is">Slack</a> der OKFN. Melde Dich zur Teilnahme bitte bei bei uns <a href="mailto:rob.tranquillo@gmx.de">per mail</a>. </p></article>');
+    var article = $('<article class="events"><h2>Treffen und Kontakt</h2><p>Wir treffen uns jeden 23.des Monats um gemeinsam an unseren Projekten zu arbeiten, miteinander zu sprechen und interessierte Menschen Willkommen zu heißen. Bitte achtet bei Interesse auf den Twitterfeed wegen der Location! Und meldet euch direkt bei uns wenn noch Fragen vorab bestehen. Ankündigungen können auch via <a href="http://www.meetup.com/OK-Lab-Dresden">Meetup</a> abboniert werden.</p><p>Für Online-Kommunikation nutzen wir ein <a href="https://slack.com/is">Slack</a> der OKFN. Melde Dich zur Teilnahme bitte bei bei uns <a href="mailto:rob.tranquillo@gmx.de">per Mail</a>.</p></article>');
     var ul = $("<ul></ul>");
     events.forEach(function(event) {
         event.time = new Date(event.date).getTime();
