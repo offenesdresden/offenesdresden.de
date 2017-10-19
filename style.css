@@ -97,7 +97,7 @@ article img {
 }
 article p, article ul {
     font-size: 90%;
-    padding:1em;
+    padding:0.3em;
 }
 article ul {
     margin: 0.5em 0;
@@ -132,10 +132,6 @@ footer:hover a {
     transition-duration: 1s;
 }
 
-.events p {
-    margin: 0;
-    padding: 0;
-}
 .events .title {
     font-weight: bold;
     color: #333;
