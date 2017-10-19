@@ -4,6 +4,7 @@ body {
     background-color: white;
     color: #333;
     font-family: sans-serif;
+    background-image: url('bg.png');
 }
 
 h1 {
@@ -75,6 +76,7 @@ article {
     padding: 0.5em 0;
     border-radius: 3px;
     box-shadow: -0.05em -0.05em 0.5em rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 article iframe {
     /* Twitter */
