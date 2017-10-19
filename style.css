@@ -73,17 +73,8 @@ article {
     display: inline-block;
     margin: 1em 1.5em;
     padding: 0.5em 0;
-    box-shadow: none;
-    transition-property: box-shadow;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-article:hover {
-    box-shadow: 0 -0.05em 0.7em rgba(0, 0, 0, 0.3);
-    transition-property: box-shadow;
     border-radius: 3px;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+    box-shadow: -0.05em -0.05em 0.5em rgba(0, 0, 0, 0.2);
 }
 article iframe {
     /* Twitter */
