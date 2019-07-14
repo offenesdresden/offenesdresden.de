@@ -1,6 +1,6 @@
 [{
     "title": "meetup im August",
     "date": "2019-08-29T19:00:00+0200",
-    "location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
+    "NO_location": "<a href='http://c3d2.de/space.html'>GCHQ</a>",
     "info": "Wir treffen uns um gemeinsam an Civic Apps für Dresden zu arbeiten. Du musst nicht programmieren können, auch grundsätzlich Interessierte Menschen sind immer herzlich Willkommen. <a href='https://www.meetup.com/de-DE/OK-Lab-Dresden/events/262865403/'>Sei dabei!</a>"
 }]
