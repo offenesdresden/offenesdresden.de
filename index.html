@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
     <head>
         <meta charset="utf-8">
         <title>OffenesDresden.de</title>
@@ -10,7 +10,7 @@
     <body>
         <h1><span class="o">Offenes</span><span class="d">Dresden</span><span class="o">.</span><span class="d">de</span></h1>
 
-        <section id="main">
+        <section id="main" role="main">
             <article>
                 <h2>Was ist OpenData und offenesdresden.de?</h2>
                 <p>Wir wollen mit öffentlichen Geldern erzeugete Daten für alle veröffentlichen und sie benutzen.</p>
@@ -34,7 +34,7 @@
             <article>
                 <h2>Luftqualität (offizielle Daten)</h2>
 
-                <img src="luft.jpg">
+                <img src="luft.jpg" alt="rauchender Schornstein">
                 <ul>
                     <li><a href="https://github.com/offenesdresden/Luftqualitaet-src">Scraper-Code</a></li>
                     <li><a href="https://github.com/offenesdresden/Luftqualitaet-data">Maschinenlesbare Daten</a></li>
@@ -45,7 +45,7 @@
             <article>
                 <h2>Luftdaten.info (crowd-sourced)</h2>
 
-                <img src="luftdaten.jpg">
+                <img src="luftdaten.jpg" alt="Karte von Dresden mit farbigen Hervorhebungen">
                 <ul>
                     <li><a href="http://luftdaten.info/feinstaubsensor-bauen/">Feinstaub-Sensor selber bauen</a>, auch in Dresden!</li>
                     <li><a href="https://github.com/offenesdresden/luftikus">Alternatives Firmwareprojekt</a> für NodeMCU</li>
@@ -56,7 +56,7 @@
             <article>
                 <h2>Ratsinfo-Daten</h2>
 
-                <img src="scraper.png">
+                <img src="scraper.png" alt="Programmcode im Editor">
                 <ul>
                     <li><a href="https://github.com/offenesdresden/ratsinfo-scraper">Für Dresden in Ruby</a></li>
                     <li><a href="https://github.com/offenesdresden/dresden-ratsinfo">Täglich aktualisiert alle Daten zum Download als OPARL</a></li>
@@ -66,7 +66,7 @@
             <article>
                 <h2>Video: Was bringt der neue Stadtrat an Daten?</h2>
                 <video controls width="400" height="225" preload="none"
-                       poster="http://ftp.c3d2.de/datenspuren/2014/5975_was_bringt_der_neue_stadtrat_an_daten.jpg">
+                       poster="http://ftp.c3d2.de/datenspuren/2014/5975_was_bringt_der_neue_stadtrat_an_daten.jpg" alt="Talk zu Daten im Stadtrat">
                     <source src="http://ftp.c3d2.de/datenspuren/2014/5975_was_bringt_der_neue_stadtrat_an_daten.mp4"
                             type="video/mp4" />
                     <source src="http://ftp.c3d2.de/datenspuren/2014/5975_was_bringt_der_neue_stadtrat_an_daten.webm"
@@ -87,7 +87,7 @@
 
             <article>
                 <h2>Parkplätze</h2>
-                <img src="parkplatz.jpg">
+                <img src="parkplatz.jpg" alt="Parkschild auf grauem Hintergrund">
                 <p>
                     Dresden veröffentlicht eine aktuelle Parkplatz- und
                     Belegungsliste im Web.
@@ -100,11 +100,10 @@
                     <li><a href="http://jkliemann.de/parkendd/pressespiegel/">ParkenDD Pressespiegel</a></li>
                 </ul>
             </article>
-
             <article>
                 <h2>Dresden Open Data Portal</h2>
 
-                <img src="dreid.png">
+                <img src="dreid.png" alt="Checkliste mit Stichpunkten von offenen Daten">
                 <p>
                     Das Portal für offene Daten der Stadt Dresden.
                 </p>
@@ -113,12 +112,26 @@
                     <li>Befreite Geodaten zum freien Download bei <a href="http://opendata.blattspinat.com/">opendata.blattspinat.com</a></li>
                 </ul>
             </article>
-
+            <article>
+                <h2>Mensa-Schnittstelle des Studentenwerks</h2>
+                <img src="mensa.jpg" alt="ein Berg Käse mit Früchten" title="image by Lucas Vogel @vogelRAW">
+                <p>
+                    Offizielle API des Studentenwerks für alle Mensen.
+                </p>
+                <ul>
+                    <li><a href="https://api.studentenwerk-dresden.de/openmensa/v2/">Startpunkt der API</a></li>
+                    <li><a href="https://api.studentenwerk-dresden.de/openmensa/v2/canteens">Liste der Mensen</a></li>
+                    <li><a href="https://doc.openmensa.org/api/v2/">Doku für die Schnittstelle</a></li>
+                    <li><a href="https://doc.openmensa.org/api/v2/canteens/meals/">Doku für die Speisenabfrage</a></li>
+                    <li><a href="https://github.com/kiliankoe/MensaDresden">Beispiel-App mit der Schnittstelle</a></li>
+                    
+                </ul>
+            </article>
             <article>
                 <h2>#staDDrat - Stadrat Medienbegleitung</h2>
                 <p>Interessierte Menschen begleiten die Arbeit des Dresdner Stadtrats und stellen allen Bürgern verschiedene
                     Möglichkeiten zur Verfügung, an der Arbeit des Stadtrates teilzuhaben.</p>
-                <img src="staddrat.png">
+                <img src="staddrat.png" alt="Schriftzug 'staDDrat' auf gelb-schwarzem Hintergrund">
                 <ul>
                     <li><a href="http://staddrat.de/">#staDDrat - Dresdner Stadtratsitzungen medial begleitet</a></li>
                     <li><a href="https://soundcloud.com/derpupe/sets/stadtratssitzungen-dresden-1">Übersicht aller uns verfügbaren Audio-Mitschnitte</a> </li>
@@ -130,7 +143,7 @@
             <article>
                 <h2>iCal Kalender zu allen Gremiensitzungen</h2>
 
-                <img src="Stadtrat-Kalender-icon_Button_400.png">
+                <img src="Stadtrat-Kalender-icon_Button_400.png" alt="Kalender vom Stadtrat vor einem Foto des Stadtrates">
                 <ul>
                     <li><a href="http://staddratkalender.boogiedev.net/">staDDrats-Kalender</a> von Rob Tranquillo</li>
                 </ul>
@@ -138,7 +151,7 @@
 
             <article>
                 <h2>Haushaltsdaten</h2>
-                <img src="ergebnishaushalt.png">
+                <img src="ergebnishaushalt.png" alt="bunte Visualisierung der Haushaltsdaten in geschichteter Form">
                 <p>
                     Kennzahlen des Haushalts(-entwurfes) Dresden:
                     <a href="https://gist.github.com/Mic92/194089d7c97300b250f6/">2011/2012</a>,
@@ -154,7 +167,7 @@
 
             <article>
                 <h2>Häuseradressen aus OpenStreetMap</h2>
-                <img src="addrs.png">
+                <img src="addrs.png" alt="Satelitenansicht auf Dresden, mit Gelb hervorgehobenen Adressdaten">
                 <ul>
                     <li>Datenquelle bei <a href="http://download.geofabrik.de/europe/germany/sachsen.html">Geofabrik</a></li>
                     <li><a href="https://github.com/astro/democropticon/tree/master/osm-addrs">Code zur Extraktion</a></li>
@@ -164,7 +177,7 @@
 
             <article>
                 <h2>Interaktiver Reiseführer</h2>
-                <img src="reisefuehrer.jpg">
+                <img src="reisefuehrer.jpg" alt="Verkehrskarte Dresden im Split-View mit Text über die Semperoper">
                 <p>
                     Das für iPad und Mac verfügbare eBook, das auf offenen Daten basiert (OpenStreetMap, Wikimedia Commons, Wikivoyage, …), ermöglicht auch offline den Zugriff auf touristisch relevante Daten.
                 </p>
@@ -176,7 +189,7 @@
 
             <article>
                 <h2>Fahrzeit zur Grenze</h2>
-                <img src="fahrzeittschechischegrenze.png">
+                <img src="fahrzeittschechischegrenze.png" alt="Satelitenkarte von Dresden überlagert mit Farbbändern">
                 <p>
                     Fahrzeit-Heatmap zur tschechischen Grenze über A17
                 </p>
@@ -187,7 +200,7 @@
 
             <article>
                 <h2>Schnittstelle der DVB</h2>
-                <img src="tram.jpg" title="Image by burts (photo taken by burts) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons">
+                <img src="tram.jpg" alt="DVB-Straßenbahn der Linie 2 im Stadtverkehr" title="Image by burts (photo taken by burts) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons">
                 <p>
                     Interaktion mit der API der DVB und des VVO mit Bibliotheken für diverse Sprachen.
                 </p>
@@ -201,6 +214,7 @@
                     <li><a href="https://github.com/hoodie/dvb-rs">dvb-rs (Rust)</a></li>
                 </ul>
             </article>
+           
         </section>
 
         <footer>
